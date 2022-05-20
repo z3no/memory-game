@@ -26,4 +26,21 @@ We want to recreate the game `memory`. It is a game where you have a bunch of ca
 
 ### Setting up the game
 ***
+In this challenge, we will be looking at creating a grid of cards, that can be flipped and matched. If a match is found, the cards stay flipped, if not, they will turn back.
+The game does not stop until all cards are flipped.
+
 #### HTML
+Our HTML provides the basic structure of the game. So it's the very first step for this project.
+I'm making use of some basic HTML tags like div, h1, etc.
+
+I'm going to make use of some bootstrap buttons and classes to keep the designing part simple.
+
+#### CSS
+Next up our CSS.
+First off we need a .hide class, this is to hide all the images we are going to use. For this we can use a simple CSS property 'visibility: hidden'.
+We also need to show the images once they are clicked and also once they match with each other they need to stay visible.
+For this we can make a class .imgShow and .match, they will override the hidden property and change it to visible with !important, this way they will always override.
+
+
+#### JavaScript
+
