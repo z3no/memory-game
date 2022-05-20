@@ -23,3 +23,7 @@ We want to recreate the game `memory`. It is a game where you have a bunch of ca
 - Let a user define custom image urls
 - Make it pleasing to look at
 - Multiplayer (local)
+
+### Setting up the game
+***
+#### HTML
