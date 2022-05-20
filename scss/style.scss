@@ -1,9 +1,24 @@
-@import "buttons";
+html {
+  font-size: 62,5%;
+  width: 100%;
+  height: 100%;
+  /* 62.5% of the base size of 16px = 10px. */
+}
 
-.gameContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: gray;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  /* reset 10*1.6 = 16px */
+}
+
+.hide {
+  padding: 1rem;
+  visibility: hidden;
+}
+
+.match, .imgShow {
+  visibility: visible !important;
 }
