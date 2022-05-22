@@ -25,6 +25,11 @@ function flipCard(clickedCard) {
 function matchCards(image1, image2) {
     if (image1 === image2) {
         match++;
+        if(match === 6){
+            setTimeout(() => {
+                return shuffleCards();
+            }, 1000)
+        }
         cardOne.target.removeEventListener('click', flipCard);
         cardTwo.target.removeEventListener('click', flipCard);
         cardOne = cardTwo = "";
