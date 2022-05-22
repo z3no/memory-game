@@ -54,7 +54,7 @@ function shuffleCards(){
     disableDeck = false;
     cardOne = cardTwo = "";
     let array = [1,2,3,4,5,6,1,2,3,4,5,6];
-    array.sort(() => Math.random() > 0.5 ? 1 : -1);
+    array.sort(() => 0.5 - Math.random());
     cards.forEach((card, i) => {
         card.classList.remove('flip');
         let imageTag = card.querySelector('.back-view img');
