@@ -43,3 +43,19 @@ function matchCards(image1, image2) {
         disableDeck = false;
     }, 1200);
 }
+
+function shuffleCards(){
+    match = 0;
+    disableDeck = false;
+    cardOne = cardTwo = "";
+    let array = [1,2,3,4,5,6,1,2,3,4,5,6];
+    array.sort(() => Math.random() > 0.5 ? 1 : -1);
+    cards.forEach((card, i) => {
+        card.classList.remove('flip');
+        let imageTag = card.querySelector('.back-view img');
+        imageTag.src = `images/img-${array[i]}.png`;
+        card.addEventListener('click', flipCard);
+    });
+}
+
+shuffleCards();
