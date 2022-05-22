@@ -12,8 +12,8 @@ We want to recreate the game `memory`. It is a game where you have a bunch of ca
 
 ### Must-have features
 ***
-- [ ] Clicking cards turns them around
-- [ ] Randomly position the cards
+- [x] Clicking cards turns them around
+- [x] Randomly position the cards
 - [ ] README, but that shouldn't even have to be said
 - [ ] Explanation on the page itself
 
@@ -78,4 +78,4 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility
 ```
 #### JavaScript
 In JavaScript we have to make sure we have a function that will be able to flip the cards,
-a function that checks if the cards are identical so they match and a function that will shuffle all cards at the start but also when you start over.
+a function that checks if the cards are identical so they match and a function that will shuffle all cards at the start but also when you got all matches.
